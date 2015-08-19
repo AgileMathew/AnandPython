@@ -1,0 +1,9 @@
+import sys
+def grep(filename):
+  f= open(filename,'r+')
+  line = f.readlines()
+  for i in line:
+    if sys.argv[2] in i:
+      print i,
+grep(sys.argv[1])
+      
