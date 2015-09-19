@@ -1,9 +1,0 @@
-from sys import argv
-def reverse(file):
-  f=open(file,'r')
-  lines=f.readlines() 
-  for line in lines:
-   # for i in range(len(line)-1,-1,-1):
-  #    print line[i],
-   print line[::-1]
-reverse('she.txt')
