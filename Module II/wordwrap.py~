@@ -1,0 +1,9 @@
+from sys import argv
+lines=open(argv[1]).readlines()
+wrap=int(argv[2])
+for line in lines:
+        if line[wrap]!=' ':
+                prev_space=line[:wrap].rfind(' ')+1
+                print line[:prev_space] + '\n' + line[prev_space:]
+        else:
+                print line[:wrap] + '\n' + line[wrap:]
