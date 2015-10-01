@@ -1,0 +1,6 @@
+import sys
+def parse_txt(x,y,z):
+	i=open(x).readlines()
+	z=len(i)
+	print [i[j].split('!')for j in range(0,z)]
+parse_txt(sys.argv[1],sys.argv[2],sys.argv[3])
